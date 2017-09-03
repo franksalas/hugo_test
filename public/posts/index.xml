@@ -49,9 +49,8 @@ We&amp;rsquo;ll start with creating a new site with a very basic template.</desc
       <pubDate>Sun, 03 Sep 2017 17:43:15 +0000</pubDate>
       
       <guid>/posts/codeblocks/</guid>
-      <description> Codeblocks html &amp;lt;section id=&amp;quot;main&amp;quot;&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h1 id=&amp;quot;title&amp;quot;&amp;gt;{{ .Title }}&amp;lt;/h1&amp;gt; {{ range .Data.Pages }} {{ .Render &amp;quot;summary&amp;quot;}} {{ end }} &amp;lt;/div&amp;gt; &amp;lt;/section&amp;gt;  python def my_func(name): out = &amp;quot;Hello {}&amp;quot;.format(name) return out  other stuff mathjax $$ v\pi(s) = \sum{a \in \mathcal{A}} \pi(a|s) q_\pi(s,a) $$
-$e=mc^2$
-graphviz </description>
+      <description>Codeblocks html &amp;lt;section id=&amp;quot;main&amp;quot;&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h1 id=&amp;quot;title&amp;quot;&amp;gt;{{ .Title }}&amp;lt;/h1&amp;gt; {{ range .Data.Pages }} {{ .Render &amp;quot;summary&amp;quot;}} {{ end }} &amp;lt;/div&amp;gt; &amp;lt;/section&amp;gt;  python def my_func(name): out = &amp;quot;Hello {}&amp;quot;.format(name) return out  other stuff mathjax $e=mc^2$
+graphjs   var ctx = document.getElementById(&amp;ldquo;myChart&amp;rdquo;).getContext(&amp;lsquo;2d&amp;rsquo;); var myChart = new Chart(ctx, { type: &amp;lsquo;bar&amp;rsquo;, data: { labels: [&amp;ldquo;Red&amp;rdquo;, &amp;ldquo;Blue&amp;rdquo;, &amp;ldquo;Yellow&amp;rdquo;, &amp;ldquo;Green&amp;rdquo;, &amp;ldquo;Purple&amp;rdquo;, &amp;ldquo;Orange&amp;rdquo;], datasets: [{ label: &amp;lsquo;# of Votes&amp;rsquo;, data: [12, 19, 3, 5, 2, 3], backgroundColor: [ &amp;lsquo;rgba(255, 99, 132, 0.</description>
     </item>
     
     <item>

@@ -113,15 +113,50 @@
 
 <h3 id="mathjax">mathjax</h3>
 
-<p>$$
-v<em>\pi(s) = \sum</em>{a \in \mathcal{A}} \pi(a|s) q_\pi(s,a)
-$$</p>
-
-<hr />
-
 <p>$e=mc^2$</p>
 
-<h3 id="graphviz">graphviz</h3>
+<h3 id="graphjs">graphjs</h3>
+
+<p><canvas id="myChart" width="400" height="400"></canvas>
+<script>
+var ctx = document.getElementById(&ldquo;myChart&rdquo;).getContext(&lsquo;2d&rsquo;);
+var myChart = new Chart(ctx, {
+    type: &lsquo;bar&rsquo;,
+    data: {
+        labels: [&ldquo;Red&rdquo;, &ldquo;Blue&rdquo;, &ldquo;Yellow&rdquo;, &ldquo;Green&rdquo;, &ldquo;Purple&rdquo;, &ldquo;Orange&rdquo;],
+        datasets: [{
+            label: &lsquo;# of Votes&rsquo;,
+            data: [12, 19, 3, 5, 2, 3],
+            backgroundColor: [
+                &lsquo;rgba(255, 99, 132, 0.2)&rsquo;,
+                &lsquo;rgba(54, 162, 235, 0.2)&rsquo;,
+                &lsquo;rgba(255, 206, 86, 0.2)&rsquo;,
+                &lsquo;rgba(75, 192, 192, 0.2)&rsquo;,
+                &lsquo;rgba(153, 102, 255, 0.2)&rsquo;,
+                &lsquo;rgba(255, 159, 64, 0.2)&rsquo;
+            ],
+            borderColor: [
+                &lsquo;rgba(255,99,132,1)&rsquo;,
+                &lsquo;rgba(54, 162, 235, 1)&rsquo;,
+                &lsquo;rgba(255, 206, 86, 1)&rsquo;,
+                &lsquo;rgba(75, 192, 192, 1)&rsquo;,
+                &lsquo;rgba(153, 102, 255, 1)&rsquo;,
+                &lsquo;rgba(255, 159, 64, 1)&rsquo;
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero:true
+                }
+            }]
+        }
+    }
+});
+</script></p>
 
   </section>
   <footer>
@@ -391,6 +426,10 @@ $$</p>
     ga('send', 'pageview');
   </script>
   
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.min.js"></script>
+
+
 
 
 <script type="text/javascript" async
