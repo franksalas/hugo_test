@@ -109,6 +109,34 @@
     return out
 </code></pre>
 
+<h2 id="other-stuff">other stuff</h2>
+
+<h3 id="mathjax">mathjax</h3>
+
+<p><code>$ v_\pi(s) = \sum_{a \in \mathcal{A}} \pi(a|s) q_\pi(s,a)  $</code></p>
+
+<hr />
+
+<p>$e=mc^2$</p>
+
+<h3 id="graphviz">graphviz</h3>
+
+<pre><code class="language-viz-dot">digraph g { 
+node[shape=&quot;circle&quot; , label=&quot;&quot;, width=0.2, height=0.2]
+l1[xlabel=&quot;v\(s\)&quot;]
+l21[xlabel=&quot;a&quot;, width=0.1, height=0.1 , style=filled]
+l22[width=0.1, height=0.1, style=filled]
+l31[xlabel=&quot;v\(s'\)&quot;]
+
+l1 -&gt; l21
+l1 -&gt; l22
+l21 -&gt; l31 [xlabel=&quot;r&quot;]
+l21 -&gt; l32
+l22 -&gt; l33
+l22 -&gt; l34
+}
+</code></pre>
+
   </section>
   <footer>
     
@@ -378,33 +406,29 @@
   </script>
   
 
-<script>
- 
- 
-
-(function(document, Clipboard) {
-
-    var $codes = document.querySelectorAll('pre');
-
-    function addCopy(element) {
-        var copy = document.createElement("button");
-        copy.className = "copy button is-pulled-right";
-        copy.textContent = "copy";
-        element.append(copy);
-    }
-
-    for (var i = 0, len = $codes.length; i < len; i++) {
-        addCopy($codes[i]);
-    }
 
 
-    new Clipboard('.copy', {
-        target: function(trigger) {
-            return trigger.previousElementSibling;
-        }
-    });
-})(document, Clipboard);
-</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
