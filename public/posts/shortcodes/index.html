@@ -84,14 +84,14 @@
 <h2 id="highlight">Highlight</h2>
 
 
-<section id="main">
-  <div>
-   <h1 id="title">{{ .Title }}</h1>
-    {{ range .Data.Pages }}
-        {{ .Render "summary"}}
-    {{ end }}
-  </div>
-</section>
+    <section id="main">
+      <div>
+       <h1 id="title">{{ .Title }}</h1>
+        {{ range .Data.Pages }}
+            {{ .Render "summary"}}
+        {{ end }}
+      </div>
+    </section>
 
 
 <h2 id="now-using-highlight-js">now using highlight.js</h2>
@@ -104,8 +104,6 @@
     {{ end }}
   &lt;/div&gt;
 &lt;/section&gt;
-
-
 </code></pre>
 
 <h2 id="tweet">tweet</h2>
