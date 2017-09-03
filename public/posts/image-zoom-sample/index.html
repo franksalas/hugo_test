@@ -359,32 +359,48 @@
   </script>
   
 
+
+
 <script>
- 
- 
+        
+    var clipInit = false;
+    $('code').each(function() {
+        var code = $(this),
+            text = code.text();
 
-(function(document, Clipboard) {
+        if (text.length > 5) {
+            if (!clipInit) {
+                var text, clip = new Clipboard('.copy-to-clipboard', {
+                    text: function(trigger) {
+                        text = $(trigger).prev('code').text();
+                        return text.replace(/^\$\s/gm, '');
+                    }
+                });
 
-    var $codes = document.querySelectorAll('pre');
+                var inPre;
+                clip.on('success', function(e) {
+                    e.clearSelection();
+                    inPre = $(e.trigger).parent().prop('tagName') == 'PRE';
+                    $(e.trigger).attr('aria-label', 'Copied to clipboard!').addClass('tooltipped tooltipped-' + (inPre ? 'w' : 's'));
+                });
 
-    function addCopy(element) {
-        var copy = document.createElement("button");
-        copy.className = "copy button is-pulled-righ";
-        copy.textContent = "copy";
-        element.append(copy);
-    }
+                clip.on('error', function(e) {
+                    inPre = $(e.trigger).parent().prop('tagName') == 'PRE';
+                    $(e.trigger).attr('aria-label', fallbackMessage(e.action)).addClass('tooltipped tooltipped-' + (inPre ? 'w' : 's'));
+                    $(document).one('copy', function(){
+                        $(e.trigger).attr('aria-label', 'Copied to clipboard!').addClass('tooltipped tooltipped-' + (inPre ? 'w' : 's'));
+                    });
+                });
 
-    for (var i = 0, len = $codes.length; i < len; i++) {
-        addCopy($codes[i]);
-    }
+                clipInit = true;
+            }
 
-
-    new Clipboard('.copy', {
-        target: function(trigger) {
-            return trigger.previousElementSibling;
+            code.after('<span class="copy-to-clipboard" title="Copy to clipboard" />');
+            code.next('.copy-to-clipboard').on('mouseleave', function() {
+                $(this).attr('aria-label', null).removeClass('tooltipped tooltipped-s tooltipped-w');
+            });
         }
     });
-})(document, Clipboard);
 </script>
 </body>
 </html>
