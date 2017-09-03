@@ -41,6 +41,9 @@
   
   <script type="text/javascript" src="/js/bundle.js"></script>
   
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
 
 </head>
 
@@ -136,7 +139,7 @@ We&rsquo;ll start with creating a new site with a very basic template.
     </p>
   </header>
   <div class="c-article__summary">
-     Hugo&rsquo;s built in shortcodes gist  Highlight  {{ .Title }} {{ range .Data.Pages }} {{ .Render "summary"}} {{ end }}   tweet Hugo 0.24 Released: Big archetype update + @Netlify _redirects etc. file supporthttps://t.co/X94FmYDEZJ #gohugo #golang @spf13 @bepsays
+     Hugo&rsquo;s built in shortcodes Highlight  {{ .Title }} {{ range .Data.Pages }} {{ .Render "summary"}} {{ end }}   now using highlight.js &lt;section id=&quot;main&quot;&gt; &lt;div&gt; &lt;h1 id=&quot;title&quot;&gt;{{ .Title }}&lt;/h1&gt; {{ range .Data.Pages }} {{ .Render &quot;summary&quot;}} {{ end }} &lt;/div&gt; &lt;/section&gt;  tweet Hugo 0.24 Released: Big archetype update + @Netlify _redirects etc. file supporthttps://t.co/X94FmYDEZJ #gohugo #golang @spf13 @bepsays
 &mdash; GoHugo.io (@GoHugoIO) June 21, 2017  vimeo    youtube   
   </div>
   

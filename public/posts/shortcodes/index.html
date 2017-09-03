@@ -42,6 +42,9 @@
   <link rel='icon' type='image/x-icon' href="/path/to/favicon" />
   <script type="text/javascript" src="/js/bundle.js"></script>
   
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
 
 </head>
 
@@ -78,10 +81,6 @@
 
 <h1 id="hugo-s-built-in-shortcodes">Hugo&rsquo;s built in shortcodes</h1>
 
-<h2 id="gist">gist</h2>
-
-<script src="//gist.github.com/spf13/7896402.js"></script>
-
 <h2 id="highlight">Highlight</h2>
 
 
@@ -94,6 +93,20 @@
   </div>
 </section>
 
+
+<h2 id="now-using-highlight-js">now using highlight.js</h2>
+
+<pre><code class="language-html">&lt;section id=&quot;main&quot;&gt;
+  &lt;div&gt;
+   &lt;h1 id=&quot;title&quot;&gt;{{ .Title }}&lt;/h1&gt;
+    {{ range .Data.Pages }}
+        {{ .Render &quot;summary&quot;}}
+    {{ end }}
+  &lt;/div&gt;
+&lt;/section&gt;
+
+
+</code></pre>
 
 <h2 id="tweet">tweet</h2>
 

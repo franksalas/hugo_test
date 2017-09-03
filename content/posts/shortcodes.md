@@ -22,7 +22,20 @@ draft: false
 </section>
 {{< /highlight >}}
 
+## now using highlight.js
 
+```html
+<section id="main">
+  <div>
+   <h1 id="title">{{ .Title }}</h1>
+    {{ range .Data.Pages }}
+        {{ .Render "summary"}}
+    {{ end }}
+  </div>
+</section>
+
+
+```
 
 ## tweet
 
