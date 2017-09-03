@@ -75,5 +75,5 @@ var myChart = new Chart(ctx, {
         }
     }
 });
-</script>`| safe}}
+</script>`| safeJS}}
 
