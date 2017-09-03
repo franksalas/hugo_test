@@ -3,6 +3,15 @@ If you want to include any custom html just before </body>, put it in /layouts/f
 Do not put anything in this file - it's only here so that hugo won't throw an error if /layouts/footer_custom.html doesn't exist.
 -->
 
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
+
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+<script type="text/javascript" src="{{ .Site.BaseURL }}js/jquery-2.x.min.js"></script>
+
+<script type="text/javascript" src="{{ .Site.BaseURL }}js/clipboard.min.js"></script>
 
 
 
