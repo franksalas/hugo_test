@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Your site title</title>
+    <link>https://example.com/</link>
+    <description>Recent content on Your site title</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; Copyright notice</copyright>
+    <lastBuildDate>Sun, 03 Sep 2017 03:35:52 +0000</lastBuildDate>
+    
+	<atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>My First Post</title>
+      <link>https://example.com/posts/my-first-post/</link>
+      <pubDate>Sun, 03 Sep 2017 03:35:52 +0000</pubDate>
+      
+      <guid>https://example.com/posts/my-first-post/</guid>
+      <description>Favorite online Mardown editors dillinger.io What’s the deal with Dillinger? Dillinger is an online cloud-enabled, HTML5, buzzword-filled Markdown editor.
+Dillinger was first designed and developed by @joemccann because he needed a decent Markdown editor. 2014, it got redesigned and coded by @mrtnbroder.
+Dillinger is a 100% open source project so fork the code and contribute!
+Follow Dillinger on Twitter at @dillingerapp.
+Follow Joe McCann on Twitter at @joemccann and Martin Broder at @mrtnbroder.</description>
+    </item>
+    
+  </channel>
+</rss>
