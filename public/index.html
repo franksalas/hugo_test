@@ -148,10 +148,12 @@ We&rsquo;ll start with creating a new site with a very basic template.
     </p>
   </header>
   <div class="c-article__summary">
-     Codeblocks html &lt;section id=&quot;main&quot;&gt; &lt;div&gt; &lt;h1 id=&quot;title&quot;&gt;{{ .Title }}&lt;/h1&gt; {{ range .Data.Pages }} {{ .Render &quot;summary&quot;}} {{ end }} &lt;/div&gt; &lt;/section&gt;  python def my_func(name): out = &quot;Hello {}&quot;.format(name) return out  other stuff mathjax $ v_\pi(s) = \sum_{a \in \mathcal{A}} \pi(a|s) q_\pi(s,a) $
+    Codeblocks html &lt;section id=&quot;main&quot;&gt; &lt;div&gt; &lt;h1 id=&quot;title&quot;&gt;{{ .Title }}&lt;/h1&gt; {{ range .Data.Pages }} {{ .Render &quot;summary&quot;}} {{ end }} &lt;/div&gt; &lt;/section&gt;  python def my_func(name): out = &quot;Hello {}&quot;.format(name) return out  other stuff mathjax $ v_\pi(s) = \sum_{a \in \mathcal{A}} \pi(a|s) q_\pi(s,a) $
 $e=mc^2$
-graphviz digraph g { node[shape=&quot;circle&quot; , label=&quot;&quot;, width=0.2, height=0.2] l1[xlabel=&quot;v\(s\)&quot;] l21[xlabel=&quot;a&quot;, width=0.1, height=0.1 , style=filled] l22[width=0.1, height=0.1, style=filled] l31[xlabel=&quot;v\(s'\)&quot;] l1 -&gt; l21 l1 -&gt; l22 l21 -&gt; l31 [xlabel=&quot;r&quot;] l21 -&gt; l32 l22 -&gt; l33 l22 -&gt; l34 }  
+graphviz digraph g { node[shape=&quot;circle&quot; , label=&quot;&quot;, width=0.2, height=0.2] l1[xlabel=&quot;v\(s\)&quot;] l21[xlabel=&quot;a&quot;, width=0.1, height=0.1 , style=filled] l22[width=0.1, height=0.1, style=filled] l31[xlabel=&quot;v\(s'\)&quot;] l1 -&gt; l21 l1 -&gt; l22 l21 -&gt; l31 [xlabel=&quot;r&quot;] l21 -&gt; l32 l22 -&gt; l33 l22 -&gt; l34 }  digraph g { node[shape=&quot;circle&quot; , label=&quot;&quot;, width=0.
   </div>
+  
+  <a href="/posts/codeblocks/" class="c-article__btn p-list-article__btn">Read more</a></li>
   
 </article>
 
@@ -510,9 +512,36 @@ Follow the following steps:
     ga('send', 'pageview');
   </script>
   
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+
+
+<script  type="text/javascript"
+    src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[','\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
 </script>
 
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    // Fix <code> tags after MathJax finishes running. This is a
+    // hack to overcome a shortcoming of Markdown. Discussion at
+    // https://github.com/mojombo/jekyll/issues/199
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i &lt; all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
 
 
 
