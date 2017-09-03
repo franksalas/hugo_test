@@ -8,33 +8,6 @@ draft: false
 
 
 
-
-## Highlight
-
-{{< highlight html >}}
-    <section id="main">
-      <div>
-       <h1 id="title">{{ .Title }}</h1>
-        {{ range .Data.Pages }}
-            {{ .Render "summary"}}
-        {{ end }}
-      </div>
-    </section>
-{{< /highlight >}}
-
-## now using highlight.js
-
-```html
-<section id="main">
-  <div>
-   <h1 id="title">{{ .Title }}</h1>
-    {{ range .Data.Pages }}
-        {{ .Render "summary"}}
-    {{ end }}
-  </div>
-</section>
-```
-
 ## tweet
 
 {{< tweet 877500564405444608 >}}

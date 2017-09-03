@@ -4,9 +4,9 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
   
-  <title>Shortcodes</title>
-  <meta property="og:title" content="Shortcodes" />
-  <meta name="twitter:title" content="Shortcodes" />
+  <title>Codeblocks</title>
+  <meta property="og:title" content="Codeblocks" />
+  <meta name="twitter:title" content="Codeblocks" />
   
 
   
@@ -17,7 +17,7 @@
 
   <meta name="author" content="Your Name"/>
   <meta property="og:site_name" content="Your site title" />
-  <meta property="og:url" content="/posts/shortcodes/" />
+  <meta property="og:url" content="/posts/codeblocks/" />
 
   
   <meta property="og:image" content="/path/to/logo" />
@@ -65,11 +65,11 @@
 
 <article class="p-article">
   <header>
-    <h1>Shortcodes</h1>
+    <h1>Codeblocks</h1>
     <div>
       <div class="c-time">
         Posted on
-        <time datetime="2017-09-03T16:54:46Z">
+        <time datetime="2017-09-03T17:43:15Z">
           Sep 3, 2017
         </time>
       </div>
@@ -79,28 +79,26 @@
   <section id="js-article" class="p-article__body">
     
 
-<h1 id="hugo-s-built-in-shortcodes">Hugo&rsquo;s built in shortcodes</h1>
+<h1 id="codeblocks">Codeblocks</h1>
 
-<h2 id="tweet">tweet</h2>
+<h3 id="html">html</h3>
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Hugo 0.24 Released: Big archetype update + <a href="https://twitter.com/Netlify">@Netlify</a> _redirects etc. file support<a href="https://t.co/X94FmYDEZJ">https://t.co/X94FmYDEZJ</a> <a href="https://twitter.com/hashtag/gohugo?src=hash">#gohugo</a> <a href="https://twitter.com/hashtag/golang?src=hash">#golang</a> <a href="https://twitter.com/spf13">@spf13</a> <a href="https://twitter.com/bepsays">@bepsays</a></p>&mdash; GoHugo.io (@GoHugoIO) <a href="https://twitter.com/GoHugoIO/status/877500564405444608">June 21, 2017</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<pre><code class="language-html">&lt;section id=&quot;main&quot;&gt;
+  &lt;div&gt;
+   &lt;h1 id=&quot;title&quot;&gt;{{ .Title }}&lt;/h1&gt;
+    {{ range .Data.Pages }}
+        {{ .Render &quot;summary&quot;}}
+    {{ end }}
+  &lt;/div&gt;
+&lt;/section&gt;
+</code></pre>
 
-<h1 id="vimeo">vimeo</h1>
+<h3 id="python">python</h3>
 
-<p>
-<div style="position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;">
-  <iframe src="//player.vimeo.com/video/146022717" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
- </div>
-</p>
-
-<h2 id="youtube">youtube</h2>
-
-<p>
-<div style="position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;">
-  <iframe src="//www.youtube.com/embed/w7Ft2ymGmfc" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen frameborder="0"></iframe>
- </div>
-</p>
+<pre><code class="language-python">def my_func(name):
+    out = &quot;Hello {}&quot;.format(name)
+    return out
+</code></pre>
 
   </section>
   <footer>
@@ -109,12 +107,12 @@
       <div class="c-pagination__ctrl">
         <div class="c-pagination__newer">
           
-          <a href="/posts/codeblocks/">Newer</a>
+          <a href="/posts/migrate-from-jekyll/">Newer</a>
           
         </div>
         <div class="c-pagination__older">
           
-          <a href="/posts/my-first-post/">Older</a>
+          <a href="/posts/shortcodes/">Older</a>
           
         </div>
       </div>

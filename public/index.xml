@@ -44,13 +44,22 @@ We&amp;rsquo;ll start with creating a new site with a very basic template.</desc
     </item>
     
     <item>
+      <title>Codeblocks</title>
+      <link>/posts/codeblocks/</link>
+      <pubDate>Sun, 03 Sep 2017 17:43:15 +0000</pubDate>
+      
+      <guid>/posts/codeblocks/</guid>
+      <description> Codeblocks html &amp;lt;section id=&amp;quot;main&amp;quot;&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h1 id=&amp;quot;title&amp;quot;&amp;gt;{{ .Title }}&amp;lt;/h1&amp;gt; {{ range .Data.Pages }} {{ .Render &amp;quot;summary&amp;quot;}} {{ end }} &amp;lt;/div&amp;gt; &amp;lt;/section&amp;gt;  python def my_func(name): out = &amp;quot;Hello {}&amp;quot;.format(name) return out  </description>
+    </item>
+    
+    <item>
       <title>Shortcodes</title>
       <link>/posts/shortcodes/</link>
       <pubDate>Sun, 03 Sep 2017 16:54:46 +0000</pubDate>
       
       <guid>/posts/shortcodes/</guid>
-      <description> Hugo&amp;rsquo;s built in shortcodes Highlight  {{ .Title }} {{ range .Data.Pages }} {{ .Render &#34;summary&#34;}} {{ end }}   now using highlight.js &amp;lt;section id=&amp;quot;main&amp;quot;&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h1 id=&amp;quot;title&amp;quot;&amp;gt;{{ .Title }}&amp;lt;/h1&amp;gt; {{ range .Data.Pages }} {{ .Render &amp;quot;summary&amp;quot;}} {{ end }} &amp;lt;/div&amp;gt; &amp;lt;/section&amp;gt;  tweet Hugo 0.24 Released: Big archetype update + @Netlify _redirects etc. file supporthttps://t.co/X94FmYDEZJ #gohugo #golang @spf13 @bepsays
-&amp;mdash; GoHugo.io (@GoHugoIO) June 21, 2017  vimeo    youtube   </description>
+      <description> Hugo&amp;rsquo;s built in shortcodes tweet Hugo 0.24 Released: Big archetype update + @Netlify _redirects etc. file supporthttps://t.co/X94FmYDEZJ #gohugo #golang @spf13 @bepsays
+&amp;mdash; GoHugo.io (@GoHugoIO) June 21, 2017  vimeo    youtube    </description>
     </item>
     
     <item>
