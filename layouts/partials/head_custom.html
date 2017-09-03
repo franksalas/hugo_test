@@ -5,3 +5,34 @@ Do not put anything in this file - it's only here so that hugo won't throw an er
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/agate.min.css">
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
+
+<script async type="text/javascript" 
+src="{{ .Site.BaseURL }}/js/clipboard.min.js"></script>
+
+<script>
+ /* * clipboard
+for hugo * clip.js */ 
+
+(function(document, Clipboard) {
+
+    var $codes = document.querySelectorAll('pre');
+
+    function addCopy(element) {
+        var copy = document.createElement("button");
+        copy.className = "copy button is-pulled-right";
+        copy.textContent = "copy";
+        element.append(copy);
+    }
+
+    for (var i = 0, len = $codes.length; i < len; i++) {
+        addCopy($codes[i]);
+    }
+
+
+    new Clipboard('.copy', {
+        target: function(trigger) {
+            return trigger.previousElementSibling;
+        }
+    });
+})(document, Clipboard);
+</script>
