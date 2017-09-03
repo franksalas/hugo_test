@@ -8,16 +8,12 @@ draft: false
 
 #JS test
 
-{{ `<script>
-$(document).ready(function() {
-$("#animatefsm").click( {
-console.log("foo");
-} );
-}
-</script>` | safeJS }}
+{{% chart id="basicChart" width=860 height=400 js="../../js/chartData.js" %}}
+
 
 ---
 
+{{< chart id="basicChart" width=860 height=400 js="../../js/chartData.js" >}}
 
 ### html
 

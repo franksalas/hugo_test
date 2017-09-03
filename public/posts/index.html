@@ -148,8 +148,7 @@ We&rsquo;ll start with creating a new site with a very basic template.
   </header>
   <div class="c-article__summary">
     Codeblocks #JS test
-{{ &lt;script&gt; $(document).ready(function() { $(&quot;#animatefsm&quot;).click( { console.log(&quot;foo&quot;); } ); } &lt;/script&gt; | safeJS }}
-html &lt;section id=&quot;main&quot;&gt; &lt;div&gt; &lt;h1 id=&quot;title&quot;&gt;{{ .Title }}&lt;/h1&gt; {{ range .Data.Pages }} {{ .Render &quot;summary&quot;}} {{ end }} &lt;/div&gt; &lt;/section&gt;  python def my_func(name): out = &quot;Hello {}&quot;.format(name) return out  other stuff mathjax $e=mc^2$
+      html &lt;section id=&quot;main&quot;&gt; &lt;div&gt; &lt;h1 id=&quot;title&quot;&gt;{{ .Title }}&lt;/h1&gt; {{ range .Data.Pages }} {{ .Render &quot;summary&quot;}} {{ end }} &lt;/div&gt; &lt;/section&gt;  python def my_func(name): out = &quot;Hello {}&quot;.format(name) return out  other stuff mathjax $e=mc^2$
 graphjs  {{&lt;script&gt; var ctx = document.getElementById(&quot;myChart&quot;).getContext('2d'); var myChart = new Chart(ctx, { type: 'bar', data: { labels: [&quot;Red&quot;, &quot;Blue&quot;, &quot;Yellow&quot;, &quot;Green&quot;, &quot;Purple&quot;, &quot;Orange&quot;], datasets: [{ label: '# of Votes', data: [12, 19, 3, 5, 2, 3], backgroundColor: [ 'rgba(255, 99, 132, 0.
   </div>
   
@@ -513,7 +512,6 @@ Follow the following steps:
   </script>
   
 
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.min.js"></script>
 
 
 
