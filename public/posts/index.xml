@@ -44,6 +44,16 @@ We&amp;rsquo;ll start with creating a new site with a very basic template.</desc
     </item>
     
     <item>
+      <title>Shortcodes</title>
+      <link>/posts/shortcodes/</link>
+      <pubDate>Sun, 03 Sep 2017 16:54:46 +0000</pubDate>
+      
+      <guid>/posts/shortcodes/</guid>
+      <description> Hugo&amp;rsquo;s built in shortcodes gist  Highlight  {{ .Title }} {{ range .Data.Pages }} {{ .Render &#34;summary&#34;}} {{ end }}   tweet Hugo 0.24 Released: Big archetype update + @Netlify _redirects etc. file supporthttps://t.co/X94FmYDEZJ #gohugo #golang @spf13 @bepsays
+&amp;mdash; GoHugo.io (@GoHugoIO) June 21, 2017  vimeo    youtube   </description>
+    </item>
+    
+    <item>
       <title>My First Post</title>
       <link>/posts/my-first-post/</link>
       <pubDate>Sun, 03 Sep 2017 03:35:52 +0000</pubDate>
