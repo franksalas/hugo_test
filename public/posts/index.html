@@ -148,7 +148,7 @@ We&rsquo;ll start with creating a new site with a very basic template.
   </header>
   <div class="c-article__summary">
     Codeblocks html &lt;section id=&quot;main&quot;&gt; &lt;div&gt; &lt;h1 id=&quot;title&quot;&gt;{{ .Title }}&lt;/h1&gt; {{ range .Data.Pages }} {{ .Render &quot;summary&quot;}} {{ end }} &lt;/div&gt; &lt;/section&gt;  python def my_func(name): out = &quot;Hello {}&quot;.format(name) return out  other stuff mathjax $e=mc^2$
-graphjs   var ctx = document.getElementById(&ldquo;myChart&rdquo;).getContext(&lsquo;2d&rsquo;); var myChart = new Chart(ctx, { type: &lsquo;bar&rsquo;, data: { labels: [&ldquo;Red&rdquo;, &ldquo;Blue&rdquo;, &ldquo;Yellow&rdquo;, &ldquo;Green&rdquo;, &ldquo;Purple&rdquo;, &ldquo;Orange&rdquo;], datasets: [{ label: &lsquo;# of Votes&rsquo;, data: [12, 19, 3, 5, 2, 3], backgroundColor: [ &lsquo;rgba(255, 99, 132, 0.
+graphjs  {{&lt;script&gt; var ctx = document.getElementById(&quot;myChart&quot;).getContext('2d'); var myChart = new Chart(ctx, { type: 'bar', data: { labels: [&quot;Red&quot;, &quot;Blue&quot;, &quot;Yellow&quot;, &quot;Green&quot;, &quot;Purple&quot;, &quot;Orange&quot;], datasets: [{ label: '# of Votes', data: [12, 19, 3, 5, 2, 3], backgroundColor: [ 'rgba(255, 99, 132, 0.
   </div>
   
   <a href="/posts/codeblocks/" class="c-article__btn p-list-article__btn">Read more</a></li>

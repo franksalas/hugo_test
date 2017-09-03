@@ -117,31 +117,32 @@
 
 <h3 id="graphjs">graphjs</h3>
 
-<p><canvas id="myChart" width="400" height="400"></canvas>
-<script>
-var ctx = document.getElementById(&ldquo;myChart&rdquo;).getContext(&lsquo;2d&rsquo;);
+<canvas id="myChart" width="400" height="400"></canvas>
+
+<p>{{<code>&lt;script&gt;
+var ctx = document.getElementById(&quot;myChart&quot;).getContext('2d');
 var myChart = new Chart(ctx, {
-    type: &lsquo;bar&rsquo;,
+    type: 'bar',
     data: {
-        labels: [&ldquo;Red&rdquo;, &ldquo;Blue&rdquo;, &ldquo;Yellow&rdquo;, &ldquo;Green&rdquo;, &ldquo;Purple&rdquo;, &ldquo;Orange&rdquo;],
+        labels: [&quot;Red&quot;, &quot;Blue&quot;, &quot;Yellow&quot;, &quot;Green&quot;, &quot;Purple&quot;, &quot;Orange&quot;],
         datasets: [{
-            label: &lsquo;# of Votes&rsquo;,
+            label: '# of Votes',
             data: [12, 19, 3, 5, 2, 3],
             backgroundColor: [
-                &lsquo;rgba(255, 99, 132, 0.2)&rsquo;,
-                &lsquo;rgba(54, 162, 235, 0.2)&rsquo;,
-                &lsquo;rgba(255, 206, 86, 0.2)&rsquo;,
-                &lsquo;rgba(75, 192, 192, 0.2)&rsquo;,
-                &lsquo;rgba(153, 102, 255, 0.2)&rsquo;,
-                &lsquo;rgba(255, 159, 64, 0.2)&rsquo;
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
             ],
             borderColor: [
-                &lsquo;rgba(255,99,132,1)&rsquo;,
-                &lsquo;rgba(54, 162, 235, 1)&rsquo;,
-                &lsquo;rgba(255, 206, 86, 1)&rsquo;,
-                &lsquo;rgba(75, 192, 192, 1)&rsquo;,
-                &lsquo;rgba(153, 102, 255, 1)&rsquo;,
-                &lsquo;rgba(255, 159, 64, 1)&rsquo;
+                'rgba(255,99,132,1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
             ],
             borderWidth: 1
         }]
@@ -156,7 +157,7 @@ var myChart = new Chart(ctx, {
         }
     }
 });
-</script></p>
+&lt;/script&gt;</code>| safe}}</p>
 
   </section>
   <footer>

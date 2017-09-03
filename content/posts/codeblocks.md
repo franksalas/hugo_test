@@ -36,7 +36,8 @@ $e=mc^2$
 ### graphjs
 
 <canvas id="myChart" width="400" height="400"></canvas>
-<script>
+
+{{`<script>
 var ctx = document.getElementById("myChart").getContext('2d');
 var myChart = new Chart(ctx, {
     type: 'bar',
@@ -74,5 +75,5 @@ var myChart = new Chart(ctx, {
         }
     }
 });
-</script>
+</script>`| safe}}
 
