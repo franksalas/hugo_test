@@ -49,9 +49,9 @@ We&amp;rsquo;ll start with creating a new site with a very basic template.</desc
       <pubDate>Sun, 03 Sep 2017 17:43:15 +0000</pubDate>
       
       <guid>/posts/codeblocks/</guid>
-      <description>Codeblocks html &amp;lt;section id=&amp;quot;main&amp;quot;&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h1 id=&amp;quot;title&amp;quot;&amp;gt;{{ .Title }}&amp;lt;/h1&amp;gt; {{ range .Data.Pages }} {{ .Render &amp;quot;summary&amp;quot;}} {{ end }} &amp;lt;/div&amp;gt; &amp;lt;/section&amp;gt;  python def my_func(name): out = &amp;quot;Hello {}&amp;quot;.format(name) return out  other stuff mathjax $ v_\pi(s) = \sum_{a \in \mathcal{A}} \pi(a|s) q_\pi(s,a) $
+      <description> Codeblocks html &amp;lt;section id=&amp;quot;main&amp;quot;&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h1 id=&amp;quot;title&amp;quot;&amp;gt;{{ .Title }}&amp;lt;/h1&amp;gt; {{ range .Data.Pages }} {{ .Render &amp;quot;summary&amp;quot;}} {{ end }} &amp;lt;/div&amp;gt; &amp;lt;/section&amp;gt;  python def my_func(name): out = &amp;quot;Hello {}&amp;quot;.format(name) return out  other stuff mathjax $$ v\pi(s) = \sum{a \in \mathcal{A}} \pi(a|s) q_\pi(s,a) $$
 $e=mc^2$
-graphviz digraph g { node[shape=&amp;quot;circle&amp;quot; , label=&amp;quot;&amp;quot;, width=0.2, height=0.2] l1[xlabel=&amp;quot;v\(s\)&amp;quot;] l21[xlabel=&amp;quot;a&amp;quot;, width=0.1, height=0.1 , style=filled] l22[width=0.1, height=0.1, style=filled] l31[xlabel=&amp;quot;v\(s&#39;\)&amp;quot;] l1 -&amp;gt; l21 l1 -&amp;gt; l22 l21 -&amp;gt; l31 [xlabel=&amp;quot;r&amp;quot;] l21 -&amp;gt; l32 l22 -&amp;gt; l33 l22 -&amp;gt; l34 }  digraph g { node[shape=&amp;quot;circle&amp;quot; , label=&amp;quot;&amp;quot;, width=0.</description>
+graphviz </description>
     </item>
     
     <item>
