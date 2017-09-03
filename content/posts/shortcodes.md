@@ -6,9 +6,6 @@ draft: false
 
 # Hugo's built in shortcodes 
 
-## gist
-
-{{< gist spf13 7896402 >}}
 
 
 
