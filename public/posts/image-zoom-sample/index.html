@@ -364,11 +364,11 @@
 
 (function(document, Clipboard) {
 
-    var $codes = document.querySelectorAll('code');
+    var $codes = document.querySelectorAll('pre');
 
     function addCopy(element) {
         var copy = document.createElement("button");
-        copy.className = "copy button is-pulled-right";
+        copy.className = "copy button is-pulled-righ";
         copy.textContent = "copy";
         element.append(copy);
     }
