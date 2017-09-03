@@ -49,7 +49,9 @@ We&amp;rsquo;ll start with creating a new site with a very basic template.</desc
       <pubDate>Sun, 03 Sep 2017 17:43:15 +0000</pubDate>
       
       <guid>/posts/codeblocks/</guid>
-      <description>Codeblocks html &amp;lt;section id=&amp;quot;main&amp;quot;&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h1 id=&amp;quot;title&amp;quot;&amp;gt;{{ .Title }}&amp;lt;/h1&amp;gt; {{ range .Data.Pages }} {{ .Render &amp;quot;summary&amp;quot;}} {{ end }} &amp;lt;/div&amp;gt; &amp;lt;/section&amp;gt;  python def my_func(name): out = &amp;quot;Hello {}&amp;quot;.format(name) return out  other stuff mathjax $e=mc^2$
+      <description>Codeblocks #JS test
+{{ &amp;lt;script&amp;gt; $(document).ready(function() { $(&amp;quot;#animatefsm&amp;quot;).click( { console.log(&amp;quot;foo&amp;quot;); } ); } &amp;lt;/script&amp;gt; | safeJS }}
+html &amp;lt;section id=&amp;quot;main&amp;quot;&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h1 id=&amp;quot;title&amp;quot;&amp;gt;{{ .Title }}&amp;lt;/h1&amp;gt; {{ range .Data.Pages }} {{ .Render &amp;quot;summary&amp;quot;}} {{ end }} &amp;lt;/div&amp;gt; &amp;lt;/section&amp;gt;  python def my_func(name): out = &amp;quot;Hello {}&amp;quot;.format(name) return out  other stuff mathjax $e=mc^2$
 graphjs  {{&amp;lt;script&amp;gt; var ctx = document.getElementById(&amp;quot;myChart&amp;quot;).getContext(&#39;2d&#39;); var myChart = new Chart(ctx, { type: &#39;bar&#39;, data: { labels: [&amp;quot;Red&amp;quot;, &amp;quot;Blue&amp;quot;, &amp;quot;Yellow&amp;quot;, &amp;quot;Green&amp;quot;, &amp;quot;Purple&amp;quot;, &amp;quot;Orange&amp;quot;], datasets: [{ label: &#39;# of Votes&#39;, data: [12, 19, 3, 5, 2, 3], backgroundColor: [ &#39;rgba(255, 99, 132, 0.</description>
     </item>
     

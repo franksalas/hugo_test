@@ -6,6 +6,19 @@ draft: false
 
 # Codeblocks
 
+#JS test
+
+{{ `<script>
+$(document).ready(function() {
+$("#animatefsm").click( {
+console.log("foo");
+} );
+}
+</script>` | safeJS }}
+
+---
+
+
 ### html
 
 ```html
