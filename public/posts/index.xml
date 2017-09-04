@@ -78,6 +78,16 @@ Follow Joe McCann on Twitter at @joemccann and Martin Broder at @mrtnbroder.</de
     </item>
     
     <item>
+      <title>Shortcode Tests</title>
+      <link>/posts/shortcode-tests/</link>
+      <pubDate>Thu, 29 Dec 2016 13:39:24 -0500</pubDate>
+      
+      <guid>/posts/shortcode-tests/</guid>
+      <description>Hello, Thanks for downloading and testing our my shortcode pack. Below will load all of the shortcodes and display the various options they have. If you like and enjoy these short codes, please post a link on your blog to GeekThis.net, I would really appreciate it.
+Installing New Shortcodes To install shortcodes, copy each HTML file relating to a shortcode you want and place it into the shortcode directory inside of Hugo.</description>
+    </item>
+    
+    <item>
       <title>(Hu)go Template Primer</title>
       <link>/posts/goisforlovers/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
