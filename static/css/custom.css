@@ -9,8 +9,10 @@ code.has-jax {
 
 
 
+pre > code {
+    font-family: 'Source Code Pro', monospace;
 
-
+}
 
 
 /*code, kbd, pre, samp {*/
