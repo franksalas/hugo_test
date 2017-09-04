@@ -7,15 +7,15 @@ code.has-jax {
     color: #515151;
 }
 
-pre {
-    display: block;
-    padding: 12px;
-    border-radius: 3px;
-    background-color: None;
-    font-size: 1.2rem;
-    word-wrap: break-word;
-    overflow: auto;
+polygon[Attributes Style] {
+    fill: none;
+    stroke: none;
 }
+user agent stylesheet
+* {
+    transform-origin: 0px 0px 0px;
+}
+
 
 
 pre > code {
