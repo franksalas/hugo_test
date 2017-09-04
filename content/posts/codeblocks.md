@@ -9,6 +9,14 @@ draft: false
 #JS test
 <iframe width="400" height="400" frameborder="0" scrolling="no" src="//plot.ly/~samsung.staines/21.embed"></iframe>
 
+
+
+## viz
+
+```viz-dot
+    digraph g { a -> b; }
+```
+
 ### html
 
 ```html
