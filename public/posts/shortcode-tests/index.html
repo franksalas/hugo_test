@@ -112,29 +112,9 @@ number at the end of the URL, along with the letter in the path name
 before it. With the example of <code>https://www.twitch.tv/example/v/123456789</code>
 the video ID would be <code>v123456789</code>.</p>
 
-<div class="shortcode shortcode--twitch shortcode--video" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-	<iframe
-		style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
-		src='http://player.twitch.tv/?channel=example&autoplay=false'
-		frameborder="0"
-		scrolling="no"
-		allowfullscreen="true">
-	</iframe>
-</div>
+<p>{{&lt; twitch channel=&ldquo;example&rdquo; &gt;}}</p>
 
-
-
-<div class="shortcode shortcode--twitch shortcode--video" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-	<iframe
-		style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
-		src='http://player.twitch.tv/?video=v123456789&autoplay=false'
-		frameborder="0"
-		scrolling="no"
-		allowfullscreen="true">
-	</iframe>
-</div>
-
-
+<p>{{&lt; twitch video=&ldquo;v123456789&rdquo; &gt;}}</p>
 
 <h2 id="jsfiddle-shortcode">JSFiddle Shortcode</h2>
 
@@ -150,17 +130,7 @@ The revision number may not exist can be set to 0 or ignored. With
 the example url of <code>https://jsfiddle.net/347cw3h4/1/</code> the ID is
 <code>347cw3h4</code> and the revision number is <code>1</code>.</p>
 
-<div class="shortcode shortcode--jsfiddle shortcode--code">
-	<iframe
-		width="100%"
-		height='200'
-		src='//jsfiddle.net/347cw3h4/0/embedded/js,html,css,result/dark'
-		allowfullscreen="allowfullscreen"
-		frameborder="0">
-	</iframe>
-</div>
-
-
+<p>{{&lt; jsfiddle id=&ldquo;347cw3h4&rdquo; rev=&ldquo;0&rdquo; color=&ldquo;dark&rdquo; view=&ldquo;js,html,css,result&rdquo; height=&ldquo;200&rdquo; &gt;}}</p>
 
 <h2 id="pastebin-shortcode">Pastebin Shortcode</h2>
 
@@ -177,15 +147,7 @@ url, the alphanumeric string directly after the pastebin domain is the
 pastebin id. Using the URL <code>http://pastebin.com/JwzQbTwh</code> as an example,
 the pastebin ID would be <code>JwzQbTwh</code>.</p>
 
-<div class="shortcode shortcode--pastebin shortcode--code" id='pastebin-JwzQbTwh'>
-	
-
-	
-
-	<script src='//pastebin.com/embed_js/JwzQbTwh'></script>
-</div>
-
-
+<p>{{&lt; pastebin id=&ldquo;JwzQbTwh&rdquo; height=&ldquo;500px&rdquo; &gt;}}</p>
 
 <h2 id="google-maps">Google Maps</h2>
 
@@ -201,26 +163,17 @@ key. You can store this key inside your Hugo configuration file or each
 time you ues the shortcode, you can add the API Key to the parameter
 <code>key</code>.</p>
 
-
+<p>{{&lt; highlight ini &gt;}}
 [params]
-	googleMapsAPIKey = "000000000000"
-
+    googleMapsAPIKey = &ldquo;000000000000&rdquo;
+{{&lt; /highlight &gt;}}</p>
 
 <p>The Google Maps shortcode accepts the parameters of <code>height</code>, <code>key</code>,
 and <code>location</code>. The height defaults to 400px if it&rsquo;s not set and the
 api key defaults to the site configuration API Key. The location is a
 search query for a location you want to display for the map.</p>
 
-<div class="shortcode shortcode--google-maps">
-	<iframe
-		src='https://www.google.com/maps/embed/v1/place?key=000&q=Googleplex%2c%20Amphitheatre%20Parkway%2c%20Mountain%20View%2c%20CA'
-		frameborder="0"
-		scrolling="no"
-		width="100%"
-		height='300'>
-	</iframe>
-</div>
-
+<p>{{&lt; google-maps key=&ldquo;000&rdquo; height=&ldquo;300&rdquo; location=&ldquo;Googleplex, Amphitheatre Parkway, Mountain View, CA&rdquo; &gt;}}</p>
 
 <h2 id="box-documents">Box Documents</h2>
 
@@ -236,16 +189,7 @@ a file inside of Box, right click on a file inside of Box and click on
 <code>https://app.box.com/s/000000000000</code>, you will want to grab the unique
 string of characters ofter the <code>/s/</code> path.</p>
 
-<div class="shortcode shortcode--box-preview">
-	<iframe
-		src='https://app.box.com/embed/s/000000'
-		frameborder="0"
-		scrolling="no"
-		width="100%"
-		height='400'>
-	</iframe>
-</div>
-
+<p>{{&lt; box-preview id=&ldquo;000000&rdquo; height=&ldquo;400&rdquo; &gt;}}</p>
 
   </section>
   <footer>
@@ -521,11 +465,9 @@ string of characters ofter the <code>/s/</code> path.</p>
 
 <script>hljs.initHighlightingOnLoad();</script>
 
-<script src="//js/jquery.min.js"></script>
 
 <script src="/js/jquery-2.x.min.js"></script>
 <script src="/js/clipboard.min.js"></script>
-<script src="/js/Chart.js"></script>
 
 
 
