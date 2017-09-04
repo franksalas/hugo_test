@@ -14,7 +14,7 @@ draft: false
 ## viz
 
 ```viz-dot
-    digraph g { a -> b; }
+digraph g { a -> b; }
 ```
 
 ### html
