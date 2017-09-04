@@ -7,13 +7,7 @@ draft: false
 # Codeblocks
 
 #JS test
-
-{{% chart id="basicChart" width=860 height=400 js="../../js/chartData.js" %}}
-
-
----
-
-{{< chart id="basicChart" width=860 height=400 js="../../js/chartData.js" >}}
+<iframe width="900" height="800" frameborder="0" scrolling="no" src="//plot.ly/~samsung.staines/21.embed"></iframe>
 
 ### html
 
