@@ -13,7 +13,11 @@ pre > code {
     font-family: 'Source Code Pro', monospace;
 
 }
+pre {
 
+    background-color: none;
+
+}
 
 /*code, kbd, pre, samp {*/
 /*    font-family: "Consolas", menlo, monospace;*/
