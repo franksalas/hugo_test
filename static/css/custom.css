@@ -7,14 +7,11 @@ code.has-jax {
     color: #515151;
 }
 
-polygon[Attributes Style] {
+polygon{
     fill: none;
     stroke: none;
 }
-user agent stylesheet
-* {
-    transform-origin: 0px 0px 0px;
-}
+
 
 
 
