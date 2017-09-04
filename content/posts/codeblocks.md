@@ -68,120 +68,31 @@ graph G {
 ```
 
 ```viz-dot
-digraph g {
-graph [
-rankdir = "LR"
-];
-node [
-fontsize = "16"
-shape = "ellipse"
-];
-edge [
-];
-"node0" [
-label = "<f0> 0x10ba8| <f1>"
-shape = "record"
-];
-"node1" [
-label = "<f0> 0xf7fc4380| <f1> | <f2> |-1"
-shape = "record"
-];
-"node2" [
-label = "<f0> 0xf7fc44b8| | |2"
-shape = "record"
-];
-"node3" [
-label = "<f0> 3.43322790286038071e-06|44.79998779296875|0"
-shape = "record"
-];
-"node4" [
-label = "<f0> 0xf7fc4380| <f1> | <f2> |2"
-shape = "record"
-];
-"node5" [
-label = "<f0> (nil)| | |-1"
-shape = "record"
-];
-"node6" [
-label = "<f0> 0xf7fc4380| <f1> | <f2> |1"
-shape = "record"
-];
-"node7" [
-label = "<f0> 0xf7fc4380| <f1> | <f2> |2"
-shape = "record"
-];
-"node8" [
-label = "<f0> (nil)| | |-1"
-shape = "record"
-];
-"node9" [
-label = "<f0> (nil)| | |-1"
-shape = "record"
-];
-"node10" [
-label = "<f0> (nil)| <f1> | <f2> |-1"
-shape = "record"
-];
-"node11" [
-label = "<f0> (nil)| <f1> | <f2> |-1"
-shape = "record"
-];
-"node12" [
-label = "<f0> 0xf7fc43e0| | |1"
-shape = "record"
-];
-"node0":f0 -> "node1":f0 [
-id = 0
-];
-"node0":f1 -> "node2":f0 [
-id = 1
-];
-"node1":f0 -> "node3":f0 [
-id = 2
-];
-"node1":f1 -> "node4":f0 [
-id = 3
-];
-"node1":f2 -> "node5":f0 [
-id = 4
-];
-"node4":f0 -> "node3":f0 [
-id = 5
-];
-"node4":f1 -> "node6":f0 [
-id = 6
-];
-"node4":f2 -> "node10":f0 [
-id = 7
-];
-"node6":f0 -> "node3":f0 [
-id = 8
-];
-"node6":f1 -> "node7":f0 [
-id = 9
-];
-"node6":f2 -> "node9":f0 [
-id = 10
-];
-"node7":f0 -> "node3":f0 [
-id = 11
-];
-"node7":f1 -> "node1":f0 [
-id = 12
-];
-"node7":f2 -> "node8":f0 [
-id = 13
-];
-"node10":f1 -> "node11":f0 [
-id = 14
-];
-"node10":f2 -> "node12":f0 [
-id = 15
-];
-"node11":f2 -> "node1":f0 [
-id = 16
-];
+digraph TrafficLights {
+node [shape=box];  gy2; yr2; rg2; gy1; yr1; rg1;
+node [shape=circle,fixedsize=true,width=0.9];  green2; yellow2; red2; safe2; safe1; green1; yellow1; red1;
+gy2->yellow2;
+rg2->green2;
+yr2->safe1;
+yr2->red2;
+safe2->rg2;
+green2->gy2;
+yellow2->yr2;
+red2->rg2;
+gy1->yellow1;
+rg1->green1;
+yr1->safe2;
+yr1->red1;
+safe1->rg1;
+green1->gy1;
+yellow1->yr1;
+red1->rg1;
+
+overlap=false
+label="PetriNet Model TrafficLights\nExtracted from ConceptBase and layed out by Graphviz"
+fontsize=12;
 }
+
 ```
 
 
